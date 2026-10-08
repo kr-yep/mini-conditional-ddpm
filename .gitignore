@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+/outputs/
+/final_project/outputs/
+/final_project/data/
+/data/
+/experiments/
+/tools/stockfish/
+*.pt
+*.pth
+*.ckpt
+.env
+.env.*

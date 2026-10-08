@@ -1,0 +1,28 @@
+dataset:
+  name: cifar10
+  image_size: 32
+  data_root: final_project/data
+  num_classes: 10
+training:
+  seed: 42
+  batch_size: 4
+  num_epochs: 1
+  learning_rate: 0.0002
+  num_timesteps: 4
+  mixed_precision: false
+  save_every_epochs: 1
+  sample_every_epochs: 0
+  num_workers: 0
+  max_train_samples: 8
+  output_dir: final_project/outputs/smoke
+model:
+  base_channels: 8
+  channel_mults: [1, 2]
+  time_emb_dim: 16
+  class_emb_dim: 16
+  dropout: 0.0
+sampling:
+  seeds: [7]
+  samples_per_class: 1
+  num_sampling_steps: 2
+  checkpoint: final_project/outputs/smoke/checkpoints/latest.pt

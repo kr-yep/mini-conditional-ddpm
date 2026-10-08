@@ -1,0 +1,5 @@
+prompt_id,category,prompt
+O01,single_object,"A red ceramic teapot on a wooden table, soft morning light, realistic photo"
+O02,multi_object_relation,"A corgi wearing a yellow raincoat standing under a red umbrella on a rainy street"
+O03,stylized,"A futuristic Taipei street market at night, neon lights, anime style illustration"
+O04,complex_description,"An ancient library inside a glass dome under the sea, fish swimming outside, volumetric light, fantasy concept art"

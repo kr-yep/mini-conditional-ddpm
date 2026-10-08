@@ -1,0 +1,52 @@
+project_name: mini_conditional_ddpm_fid_combo_cosine_attention_base128_ema200
+
+dataset:
+  name: cifar10
+  image_size: 32
+  data_root: final_project/data
+  num_classes: 10
+
+training:
+  seed: 42
+  batch_size: 64
+  num_epochs: 200
+  learning_rate: 0.0002
+  num_timesteps: 1000
+  beta_schedule: cosine
+  mixed_precision: true
+  save_every_epochs: 20
+  sample_every_epochs: 50
+  sample_grid_steps: 50
+  sample_grid_samples_per_class: 2
+  early_stopping:
+    enabled: false
+    patience_epochs: 0
+    min_delta: 0.00005
+  ema:
+    enabled: true
+    decay: 0.999
+  num_workers: 4
+  max_train_samples: null
+  output_dir: final_project/outputs/fid_tuning/combo_cosine_attention_base128_ema200
+
+model:
+  base_channels: 128
+  channel_mults: [1, 2, 4]
+  time_emb_dim: 256
+  class_emb_dim: 256
+  dropout: 0.1
+  use_attention: true
+  attention_heads: 4
+
+sampling:
+  seeds: [7, 42, 3407]
+  samples_per_class: 4
+  num_sampling_steps: 100
+  guidance_scale: null
+  checkpoint: final_project/outputs/fid_tuning/combo_cosine_attention_base128_ema200/checkpoints/latest_ema.pt
+
+evaluation:
+  metrics:
+    - fid
+    - inception_score
+  baseline_summary: outputs/midterm_main/evaluation/summary_by_model.csv

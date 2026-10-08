@@ -1,0 +1,12 @@
+model,class_id,class_name,num_images,classifier_checkpoint,classifier_test_acc,class_accuracy,mean_target_prob
+combo_epoch200_ema,overall,overall,120,final_project/outputs/classifier/resnet18_cifar10/best.pt,0.9147,0.8833333333333333,0.8276966962313357
+combo_epoch200_ema,0,airplane,12,final_project/outputs/classifier/resnet18_cifar10/best.pt,0.9147,0.9166666666666666,0.8655429819288353
+combo_epoch200_ema,1,automobile,12,final_project/outputs/classifier/resnet18_cifar10/best.pt,0.9147,1.0,0.9385063946247101
+combo_epoch200_ema,2,bird,12,final_project/outputs/classifier/resnet18_cifar10/best.pt,0.9147,0.8333333333333334,0.7439651961127917
+combo_epoch200_ema,3,cat,12,final_project/outputs/classifier/resnet18_cifar10/best.pt,0.9147,0.5833333333333334,0.5143274440973377
+combo_epoch200_ema,4,deer,12,final_project/outputs/classifier/resnet18_cifar10/best.pt,0.9147,0.8333333333333334,0.8209398281469475
+combo_epoch200_ema,5,dog,12,final_project/outputs/classifier/resnet18_cifar10/best.pt,0.9147,1.0,0.8974350094795227
+combo_epoch200_ema,6,frog,12,final_project/outputs/classifier/resnet18_cifar10/best.pt,0.9147,0.9166666666666666,0.9032100364565849
+combo_epoch200_ema,7,horse,12,final_project/outputs/classifier/resnet18_cifar10/best.pt,0.9147,0.8333333333333334,0.7250142724951729
+combo_epoch200_ema,8,ship,12,final_project/outputs/classifier/resnet18_cifar10/best.pt,0.9147,0.9166666666666666,0.8745579166958729
+combo_epoch200_ema,9,truck,12,final_project/outputs/classifier/resnet18_cifar10/best.pt,0.9147,1.0,0.9934678822755814

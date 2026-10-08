@@ -1,0 +1,3 @@
+model,num_fake,num_real,fid,inception_score_mean,inception_score_std,status
+Conditional DDPM 10k,10000,10000,44.66584777832031,5.6180739402771,0.14411823451519012,ok
+Unconditional DDPM 10k,10000,10000,39.45990753173828,5.928008556365967,0.14876413345336914,ok

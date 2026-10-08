@@ -1,0 +1,2 @@
+model,num_fake,num_real,fid,inception_score_mean,inception_score_std,status
+Combo cosine attention base128 EMA epoch200 steps100 10k,10000,10000,17.813737869262695,8.088116645812988,0.292184054851532,ok
